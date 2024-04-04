@@ -26,6 +26,6 @@ const titleTypedConfig = {
   showCursor: false,
 }
 // DenoCount 的 URL
-const denoCountURL = 'https://count.leafyee.xyz'
+const denoCountURL = 'https://denocount.deno.dev'
 
 export { introTypedConfig, titleTypedConfig, denoCountURL }

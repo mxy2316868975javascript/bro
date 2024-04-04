@@ -14,7 +14,6 @@ function App() {
     const script = document.createElement('script')
     // 设置属性
     script.src = `${denoCountURL}/static`
-    script.async = true
     script.defer = true
     script.dataset.db = denoCountURL
     // 添加到 body
