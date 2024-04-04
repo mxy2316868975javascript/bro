@@ -1,49 +1,43 @@
-.project {
-  display: flex;
-  position: relative;
-  flex-direction: row;
+.swiper-container {
   width: 100%;
   height: 100%;
+}
 
-  & .project-item {
-    position: relative;
-    width: var(--project-item-width);
-    height: var(--project-item-height);
-    background-color: var(--pink-warm);
-    color: var(--color-text);
+.swiper-slide {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  text-align: center;
+  color: var(--color-text);
 
-    & a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: calc(var(--project-item-height)*0.38) 10% 0 10%;
-      background-size: cover;
-      background-position: center;
-      transition: all 0.1s ease;
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      & .title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        backdrop-filter: blur(10px);
-      }
-      & .description {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        backdrop-filter: blur(10px);
-      }
-    }
+  & .item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
   }
 
-  & .project-item.status {
-    background-color: var(--pink-normal);
-    /* 临时属性, 记得删除 */
-    padding-top: calc(var(--project-item-height)*0.38);
-    & p, a {
-      padding: 5px;
-      font-weight: bold;
-    }
+  & .item-description {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
   }
+
+  & .item-link {
+    font-weight: bold;
+    padding: 0.5rem;
+    color: var(--pink-highlight);
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--pink-light)!important;
 }

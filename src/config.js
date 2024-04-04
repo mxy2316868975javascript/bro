@@ -10,11 +10,12 @@ const sectionsInfo = [
 ]
 // Items
 const itemsInfo = [
-  { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ', cover: '' },
-  { title: '旧版网站', description: '功成身退~', link: 'https://legacy.leafyee.xyz', cover: '' },
+  { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ', cover: '/assets/cover_1.jpg' },
+  { title: '旧版网站', description: '新版小站仍在建设中~', link: 'https://legacy.leafyee.xyz', cover: '/assets/cover_2.jpg' },
+  { title: '我的博客', description: '里面有我的笔记!', link: 'https://blog.leafyee.xyz', cover: '/assets/cover_3.jpg' },
+  { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz', cover: '/assets/cover_4.jpg' },
+  { title: '我的网盘', description: '自用文件存储与分发', link: 'https://file.leafyee.xyz', cover: '/assets/cover_5.jpg' },
 ]
-// DenoCount 的 URL
-const denoCountURL = 'https://denocount.deno.dev'
 // 个人简介的 Typed.js 配置
 const introTypedConfig = {
   strings: ['一个心理学专业的大学生<br>一个社会自由主义者<br>喜欢漫画 / 动漫 / BJD<br>喜欢水彩 / 板绘 / 设计<br>喜欢草莓 / 鱿鱼 / 抹茶 / 无骨鸡爪<br>对网络技术 / 编程感兴趣<br>主要使用 JavaScript, 自学 Rust 中<br>喜欢可爱的人事物<br>致力于成为优秀的心理咨询师'],
@@ -42,7 +43,6 @@ const titleTypedConfig = {
 export { 
   introTypedConfig,
   titleTypedConfig,
-  denoCountURL,
   sectionsInfo,
   itemsInfo,
 }

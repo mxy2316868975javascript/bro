@@ -12,7 +12,7 @@ class Footer {
         &nbsp;&nbsp;
         |&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;|
         &nbsp;
-        封面：<a href='https://x.com/amehakoniwa' target='_blank' title=' '>雨里</a>
+        封面：<a href='https://x.com/amehakoniwa' target='_blank' title=' '>雨里</a> / <a href="https://x.com/noeyebrow313" target="_blank" title=" ">NOEYEBROW</a>
       </footer>
     )
   }    
