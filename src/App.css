@@ -11,11 +11,14 @@ main {
   --yellow-light: #fff9db;
 
   --height-section: 30rem;
-  --width-section-title: 40%;
-  --width-section-content: 60%;
+  --width-section-title: 40vw;
+  --width-section-content: 60vw;
 
   --top-header-title: 43%;
   --top-header-typed: 52%;
+
+  --project-item-width: calc(var(--width-section-content)*0.333);
+  --project-item-height: calc(var(--height-section)*0.5);
 }
 
 #waline {
