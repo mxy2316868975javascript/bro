@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  height: var(--height-section);
+  & .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-section-title);
+    background-color: var(--pink-light);
+    text-align: center;
+  }
+  & .section-content {
+    width: var(--width-section-content);
+    background-color: var(--pink-warm);
+    text-align: center;
+  }
+}
