@@ -1,13 +1,24 @@
-html {
+main {
   --color-title: #ffffff;
-  --color-text: #000000;
-  --color-back: #ffe9e9;
+  --color-text: #300000;
+  --color-back: #ffffff;
+
   --pink-light: #ffefef;
   --pink-normal: #ffe1e1;
   --pink-warm: #ffbdbd;
   --pink-highlight: #fa255e;
 
-  --height-section: 10rem;
+  --yellow-light: #fff9db;
+
+  --height-section: 30rem;
   --width-section-title: 40%;
   --width-section-content: 60%;
+
+  --top-header-title: 43%;
+  --top-header-typed: 52%;
 }
+
+#waline {
+  background-color: var(--color-back);
+}
+

@@ -11,7 +11,7 @@ header {
   & .header-title {
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: var(--top-header-title);
     text-align: center;
     font-size: 3.3rem;
     font-weight: bold;

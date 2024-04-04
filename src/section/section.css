@@ -3,15 +3,26 @@ section {
   height: var(--height-section);
   & .section-title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: var(--width-section-title);
     background-color: var(--pink-light);
-    text-align: center;
+    width: var(--width-section-title);
+    & .section-title-main {
+      font-weight: bold;
+      font-size: 2rem;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+    & .section-title-sub {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--color-text);
+    }
   }
   & .section-content {
     width: var(--width-section-content);
-    background-color: var(--pink-warm);
+    background-color: var(--yellow-light);
     text-align: center;
   }
 }
