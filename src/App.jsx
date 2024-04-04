@@ -26,7 +26,7 @@ function App() {
           <p><a href='https://github.com/LeafYeeXYZ'>我的 Github ↗</a></p>
           <p><a href='https://legacy.leafyee.xyz'>旧版网站 ↗</a></p>
           <p>本站总访问量: <span id='SV'></span> (自2024.1.1)</p>
-          <script src="https://count.leafyee.xyz/static" data-db="https://count.leafyee.xyz"></script>
+          <script src="https://denocount.deno.dev/static" data-db="https://count.leafyee.xyz"></script>
         </div>
       </Section>
 
