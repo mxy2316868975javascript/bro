@@ -57,7 +57,7 @@ export default function Project() {
         loop={true} 
         autoplay={{
           delay: 3500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }} 
         speed={500}
       >
