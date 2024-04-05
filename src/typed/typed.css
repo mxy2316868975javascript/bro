@@ -11,16 +11,3 @@
     color: var(--color-text);
   }
 }
-
-#title-typed {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: var(--top-header-typed);
-  & span {
-    line-height: 1.5;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--color-title);
-  }
-}

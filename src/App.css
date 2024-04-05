@@ -3,6 +3,11 @@ main {
   --color-text: #300000;
   --color-back: #ffffff;
 
+  --color-section-title: #fff6f6;
+  --color-section-content: #fff0f0;
+  --color-footer: #fff0f0;
+  --color-link: #fa255e;
+
   --pink-light: #ffefef;
   --pink-normal: #ffe1e1;
   --pink-warm: #ffbdbd;
@@ -10,12 +15,9 @@ main {
 
   --yellow-light: #fff9db;
 
-  --height-section: 25rem;
-  --width-section-title: 40vw;
-  --width-section-content: 60vw;
-
-  --top-header-title: 43%;
-  --top-header-typed: 52%;
+  & a {
+    color: var(--color-link);
+  }
 }
 
 #waline {

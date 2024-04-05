@@ -3,18 +3,46 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
+  --header-text: 1.2rem;
+
   & .header-cover {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
   }
+
   & .header-title {
-    position: absolute;
     width: 100%;
-    top: var(--top-header-title);
     text-align: center;
-    font-size: 3.3rem;
+    font-size: calc(var(--header-text) * 3.3);
+    font-weight: bold;
+    color: var(--color-title);
+    padding-top: 40vh;
+    padding-bottom: 1vh;
+  }
+}
+
+#title-typed {
+  width: 100%;
+  text-align: center;
+  & span {
+    line-height: 1.5;
+    font-size: calc(var(--header-text) * 1.3);
     font-weight: bold;
     color: var(--color-title);
   }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    --header-text: 1rem;
+  }  
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    --header-text: 0.8rem;
+  }  
 }

@@ -5,7 +5,7 @@
 import './project.css'
 import { itemsInfo } from '../config.js'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Pagination } from 'swiper/modules'
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
@@ -32,16 +32,8 @@ export default function Project() {
   }, [])
   // 生成项目列表
   const items = itemsInfo.map((item, index) => {
-    // 临时随机颜色区分一下
-    // 如果颜色太深，就换一个
-    let randomColor = [0x00, 0x00, 0x00]
-    while (randomColor[0] < 0xa0 || randomColor[1] < 0xa0 || randomColor[2] < 0xa0) {
-      randomColor = randomColor.map(() => Math.floor(Math.random() * 0xff))
-    }
-    randomColor = `rgb(${randomColor.join(',')})`
-
     return (
-      <SwiperSlide key={index} style={{ backgroundColor: randomColor, backgroundImage: `url(${item.cover})` }}>
+      <SwiperSlide key={index} style={{ backgroundImage: `url(${item.cover})` }}>
         <p className='item-title'>{item.title}</p>
         <p className='item-description'>{item.description}</p>
         <a className='item-link' href={item.link} target='_blank'>点击访问 ↗</a>
@@ -56,8 +48,14 @@ export default function Project() {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[Autoplay, FreeMode, Pagination]}
         className="swiper-container" 
+        loop={true} 
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }} 
+        speed={500}
       >
         {items}
       </Swiper>
