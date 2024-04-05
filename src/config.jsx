@@ -3,7 +3,7 @@
  */
 
 // 图标见 https://ant.design/components/icon-cn
-import { GithubFilled, BookFilled, SlidersFilled, SnippetsFilled } from '@ant-design/icons'
+import { GithubFilled, BookFilled, SlidersFilled } from '@ant-design/icons'
 
 // 各节的标题和副标题
 const sectionsInfo = [
@@ -19,8 +19,6 @@ const itemsInfo = [
     cover: '/assets/cover_2.jpg', icon: <BookFilled /> },
   { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz',
     cover: '/assets/cover_3.jpg', icon: <SlidersFilled /> },
-  { title: '我的网盘', description: '自用文件存储与分发', link: 'https://file.leafyee.xyz',
-    cover: '/assets/cover_4.jpg', icon: <SnippetsFilled /> },
 ]
 // 个人简介的 Typed.js 配置
 const introTypedConfig = {

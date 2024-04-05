@@ -4,7 +4,6 @@
 
 import { Switch, ConfigProvider } from 'antd'
 import { SunFilled, MoonFilled } from '@ant-design/icons'
-import './themeswitcher.css'
 import { useState, useEffect } from 'react'
 
 function ThemeSwitcher() {

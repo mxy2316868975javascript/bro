@@ -38,8 +38,8 @@ export default function Project() {
           {item.icon}
           <span className='item-title'>{item.title}</span>
           <span className='item-description'>{item.description}</span>
+          <a className='item-link' href={item.link} target='_blank'>↗</a>
         </p>
-        <a className='item-link' href={item.link} target='_blank'>↗</a>
       </SwiperSlide>
     )
   })
