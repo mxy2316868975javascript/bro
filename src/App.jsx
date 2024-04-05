@@ -4,13 +4,16 @@ import Header from './header/header.jsx'
 import Footer from './footer/footer.jsx'
 import Section from './section/section.jsx'
 import Project from './project/project.jsx'
+import ThemeSwitcher from './antdesign/themeswitcher.jsx'
 import { IntroTyped } from './typed/typed.jsx'
-import { sectionsInfo } from './config.js'
+import { sectionsInfo } from './config.jsx'
 
 function App() {
   // 渲染
   return (
     <main>
+      <ThemeSwitcher />
+
       <Header cover={cover} />
 
       <Section {...sectionsInfo[0]}>

@@ -2,6 +2,9 @@
  * @fileoverview 集中设置一些内容
  */
 
+// 图标见 https://ant.design/components/icon-cn
+import { GithubFilled, BookFilled, SlidersFilled, SnippetsFilled } from '@ant-design/icons'
+
 // 各节的标题和副标题
 const sectionsInfo = [
   { title: '我的项目( ╯▽╰)', subtitle: '这里是小叶子的个人小站~', direction: 'row' },
@@ -11,13 +14,13 @@ const sectionsInfo = [
 // Items
 const itemsInfo = [
   { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ',
-    cover: '/assets/cover_1.jpg', icon: 'icon-github' },
+    cover: '/assets/cover_1.jpg', icon: <GithubFilled /> },
   { title: '我的博客', description: '里面有我的笔记!', link: 'https://blog.leafyee.xyz',
-    cover: '/assets/cover_2.jpg', icon: 'icon-book' },
+    cover: '/assets/cover_2.jpg', icon: <BookFilled /> },
   { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz',
-    cover: '/assets/cover_3.jpg', icon: 'icon-pencil' },
+    cover: '/assets/cover_3.jpg', icon: <SlidersFilled /> },
   { title: '我的网盘', description: '自用文件存储与分发', link: 'https://file.leafyee.xyz',
-    cover: '/assets/cover_4.jpg', icon: 'icon-folder' },
+    cover: '/assets/cover_4.jpg', icon: <SnippetsFilled /> },
 ]
 // 个人简介的 Typed.js 配置
 const introTypedConfig = {

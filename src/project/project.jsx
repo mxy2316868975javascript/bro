@@ -3,14 +3,13 @@
  */
 
 import './project.css'
-import { itemsInfo } from '../config.js'
+import { itemsInfo } from '../config.jsx'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import { useState, useEffect } from 'react'
-import '../ico/style.css'
 
 export default function Project() {
   // 根据屏幕宽度随时更新 swiper 的 slidesPerView
@@ -36,7 +35,7 @@ export default function Project() {
     return (
       <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover})` }}>
         <p className='item-container'>
-          <span className={item.icon + ' item-icon'}></span>
+          {item.icon}
           <span className='item-title'>{item.title}</span>
           <span className='item-description'>{item.description}</span>
         </p>
@@ -57,7 +56,7 @@ export default function Project() {
         loop={true} 
         autoplay={{
           delay: 3500,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }} 
         speed={500}
       >

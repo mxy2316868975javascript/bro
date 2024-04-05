@@ -1,7 +1,7 @@
 import React from 'react'
 import Typed from 'typed.js'
 import './typed.css'
-import { introTypedConfig, titleTypedConfig } from '../config.js'
+import { introTypedConfig, titleTypedConfig } from '../config.jsx'
 
 function IntroTyped() {
   // Create reference to store the DOM element containing the animation
