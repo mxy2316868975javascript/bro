@@ -10,15 +10,16 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import { useState, useEffect } from 'react'
+import '../ico/style.css'
 
 export default function Project() {
   // 根据屏幕宽度随时更新 swiper 的 slidesPerView
   const [slidesPerView, setSlidesPerView] = useState(3)
   useEffect(() => {
     function updateSlidesPerView() {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1000) {
         setSlidesPerView(1)
-      } else if (window.innerWidth < 1200) {
+      } else if (window.innerWidth < 1500) {
         setSlidesPerView(2)
       } else {
         setSlidesPerView(3)
@@ -33,10 +34,13 @@ export default function Project() {
   // 生成项目列表
   const items = itemsInfo.map((item, index) => {
     return (
-      <SwiperSlide key={index} style={{ backgroundImage: `url(${item.cover})` }}>
-        <p className='item-title'>{item.title}</p>
-        <p className='item-description'>{item.description}</p>
-        <a className='item-link' href={item.link} target='_blank'>点击访问 ↗</a>
+      <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover})` }}>
+        <p className='item-container'>
+          <span className={item.icon + ' item-icon'}></span>
+          <span className='item-title'>{item.title}</span>
+          <span className='item-description'>{item.description}</span>
+        </p>
+        <a className='item-link' href={item.link} target='_blank'>↗</a>
       </SwiperSlide>
     )
   })
@@ -52,7 +56,7 @@ export default function Project() {
         className="swiper-container" 
         loop={true} 
         autoplay={{
-          delay: 3000,
+          delay: 3500,
           disableOnInteraction: false,
         }} 
         speed={500}

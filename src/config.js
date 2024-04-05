@@ -10,11 +10,14 @@ const sectionsInfo = [
 ]
 // Items
 const itemsInfo = [
-  { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ', cover: '/assets/cover_1.jpg' },
-  { title: '旧版网站', description: '新版小站仍在建设中~', link: 'https://legacy.leafyee.xyz', cover: '/assets/cover_2.jpg' },
-  { title: '我的博客', description: '里面有我的笔记!', link: 'https://blog.leafyee.xyz', cover: '/assets/cover_3.jpg' },
-  { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz', cover: '/assets/cover_4.jpg' },
-  { title: '我的网盘', description: '自用文件存储与分发', link: 'https://file.leafyee.xyz', cover: '/assets/cover_5.jpg' },
+  { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ',
+    cover: '/assets/cover_1.jpg', icon: 'icon-github' },
+  { title: '我的博客', description: '里面有我的笔记!', link: 'https://blog.leafyee.xyz',
+    cover: '/assets/cover_2.jpg', icon: 'icon-book' },
+  { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz',
+    cover: '/assets/cover_3.jpg', icon: 'icon-pencil' },
+  { title: '我的网盘', description: '自用文件存储与分发', link: 'https://file.leafyee.xyz',
+    cover: '/assets/cover_4.jpg', icon: 'icon-folder' },
 ]
 // 个人简介的 Typed.js 配置
 const introTypedConfig = {
