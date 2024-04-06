@@ -43,10 +43,23 @@ const titleTypedConfig = {
   contentType: 'html',
   showCursor: false,
 }
+// Waline 配置
+const walineConfig = {
+  el: '#waline',
+  path: '/',
+  lang: 'zh-CN',
+  serverURL: 'https://comment.leafyee.xyz',
+  turnstileKey: '0x4AAAAAAAOZ5cnsddyB2fQW',
+  emoji: [
+    'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+    'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+  ]
+}
 
 export { 
   introTypedConfig,
   titleTypedConfig,
   sectionsInfo,
   itemsInfo,
+  walineConfig,
 }

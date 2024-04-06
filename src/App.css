@@ -1,9 +1,7 @@
 :root {
   --color-title: #ffffff;
   --color-text: #300000;
-  --color-back: #ffffff;
   --brightness: 1;
-  --brightness-iframe: 1;
 
   --color-section-title: #fff6f6;
   --color-section-content: #fff0f0;
@@ -18,14 +16,21 @@
   --color-project-nav-dot: #fa255e;
   --color-project-nav-back: #fff0f0;
 
+  --color-waline-back: #ffffff;
+  --color-waline-back-textarea: #ffffff;
+  --color-waline-theme: #ef7878;
+  --color-waline-theme-hover: #ef4f4f;
+  --color-waline-text: #300000;
+  --color-waline-text-badge: #df6f6f;
+  --color-waline-text-info: #b09090;
+  --color-waline-text-infoback: #f6f6f6;
+
   overflow-x: hidden;
 }
 .dark {
   --color-title: #efefef;
   --color-text: #efefef;
-  --color-back: #ffffff;
   --brightness: 0.7;
-  --brightness-iframe: 0.6;
 
   --color-section-title: #000000;
   --color-section-content: #101010;
@@ -39,16 +44,21 @@
   --color-project-back-link: #101010;
   --color-project-nav-dot: #fa255e;
   --color-project-nav-back: #101010;
+
+  --color-waline-back: #101010;
+  --color-waline-back-textarea: #000000;
+  --color-waline-theme: #ef7878;
+  --color-waline-theme-hover: #ef4f4f;
+  --color-waline-text: #fff0f0;
+  --color-waline-text-badge: #df6f6f;
+  --color-waline-text-info: #b09090; 
+  --color-waline-text-infoback: #000000;
 }
 body {
   background-color: var(--color-footer);
 }
 a {
   color: var(--color-link);
-}
-#waline {
-  background-color: var(--color-back);
-  filter: brightness(var(--brightness-iframe));
 }
 * {
   transition: all 0.3s ease;

@@ -3,6 +3,7 @@ section {
   height: 25rem;
   & .section-title {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -21,6 +22,7 @@ section {
     }
   }
   & .section-content {
+    overflow: hidden;
     width: 60vw;
     background-color: var(--color-section-content);
     text-align: center;
