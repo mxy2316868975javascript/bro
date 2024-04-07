@@ -4,7 +4,7 @@ import { init } from '@waline/client'
 import '@waline/client/style'
 import { useEffect } from 'react'
 import './waline.css'
-import { walineConfig } from '../../config'
+import { walineConfig } from '../config.jsx'
 
 export default function Waline() {
   useEffect(() => {
