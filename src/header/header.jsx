@@ -5,9 +5,10 @@
 import './header.css'
 import { TitleTyped } from '../typed/typed.jsx'
 import ThemeSwitcher from './themeswitcher.jsx'
+import cover from './cover.jpg'
 
 class Header {
-  static render({ cover }) {
+  static render() {
     return (
       <header>
         <img src={cover} alt='cover' className='header-cover' />

@@ -1,5 +1,4 @@
 import './App.css'
-import cover from './img/cover.jpg'
 import Header from './header/header.jsx'
 import Footer from './footer/footer.jsx'
 import Section from './section/section.jsx'
@@ -12,7 +11,7 @@ function App() {
   // 渲染
   return (
     <main>
-      <Header cover={cover} />
+      <Header />
 
       <Section {...sectionsInfo[0]}>
         <Project />
