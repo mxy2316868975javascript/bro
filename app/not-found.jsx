@@ -29,7 +29,6 @@ export default function NotFound() {
       }}
       onClick={() => {
         window.location.href = '/'
-      
       }}>返回首页</button>
       <style>
         {`

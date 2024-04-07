@@ -1,11 +1,11 @@
-import './components/main.css'
+import './page.css'
 import Header from './components/header/header.jsx'
 import Footer from './components/footer/footer.jsx'
 import Section from './components/section/section.jsx'
 import Project from './components/project/project.jsx'
 import Waline from './components/waline/waline.jsx'
 import { IntroTyped } from './components/typed/typed.jsx'
-import { sectionsInfo } from './components/config.jsx'
+import { sectionsInfo } from './config.jsx'
 
 function App() {
   // 渲染
