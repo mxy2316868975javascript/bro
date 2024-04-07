@@ -14,15 +14,15 @@ const sectionsInfo = [
 // Items
 const itemsInfo = [
   { title: 'GitHub', description: '我的一些小程序~', link: 'https://github.com/LeafYeeXYZ',
-    cover: '/assets/cover_1.jpg', icon: <GithubFilled /> },
+    icon: <GithubFilled />, cover: { src: '/assets/cover_1.jpg', author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } },
   { title: '我的博客', description: '里面有我的笔记!', link: 'https://blog.leafyee.xyz',
-    cover: '/assets/cover_2.jpg', icon: <BookFilled /> },
+    icon: <BookFilled />, cover: { src: '/assets/cover_2.jpg', author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } },
   { title: '赛博画师小叶子', description: 'AI 绘画', link: 'https://paint.leafyee.xyz',
-    cover: '/assets/cover_3.jpg', icon: <SlidersFilled /> },
+    icon: <SlidersFilled />, cover: { src: '/assets/cover_3.jpg', author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } },
   { title: '本站源码', description: '开源在 GitHub 了~', link: 'https://github.com/LeafYeeXYZ/MyWebsite',
-    cover: '/assets/cover_4.jpg', icon: <ApiFilled /> },
+    icon: <ApiFilled />, cover: { src: '/assets/cover_4.jpg', author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } },
   { title: '我的邮箱', description: '欢迎联系我~', link: 'mailto:xiaoyezi@leafyee.xyz',
-    cover: '/assets/cover_5.jpg', icon: <MailFilled /> },
+    icon: <MailFilled />, cover: { src: '/assets/cover_5.jpg', author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } },
 ]
 // 个人简介的 Typed.js 配置
 const introTypedConfig = {

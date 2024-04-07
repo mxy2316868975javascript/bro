@@ -35,7 +35,8 @@ export default function Project() {
   // 生成项目列表
   const items = itemsInfo.map((item, index) => {
     return (
-      <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover})` }}>
+      <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover.src})` }}>
+        <a className='cover-author' href={item.cover.link} target='_blank'>© {item.cover.author}</a>
         <p className='item-container'>
           {item.icon}
           <span className='item-title'>{item.title}</span>
