@@ -2,7 +2,6 @@
 
 ### 使用工具
 
-- `React`: 主要框架
-- `Vite`: 打包工具
+- `React` & `Next.js`: 框架
 - `Swiper`: 轮播图
 - `AntDesign`: 图标和部分组件

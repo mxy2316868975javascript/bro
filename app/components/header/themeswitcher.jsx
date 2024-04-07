@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * @fileoverview 主题切换组件
  */

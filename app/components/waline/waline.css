@@ -15,4 +15,5 @@
   --waline-info-color: var(--color-waline-text-info);
   --waline-info-bg-color: var(--color-waline-text-infoback);
   & .wl-count { color: var(--color-waline-text); }
+  scrollbar-width: none;
 }
