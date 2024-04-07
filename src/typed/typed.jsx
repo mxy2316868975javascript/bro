@@ -1,13 +1,13 @@
-import React from 'react'
+import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
 import './typed.css'
 import { introTypedConfig, titleTypedConfig } from '../config.jsx'
 
 function IntroTyped() {
   // Create reference to store the DOM element containing the animation
-  const introTyped = React.useRef(null)
+  const introTyped = useRef(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const typed = new Typed(introTyped.current, introTypedConfig)
 
     return () => {
@@ -25,9 +25,9 @@ function IntroTyped() {
 
 function TitleTyped() {
   // Create reference to store the DOM element containing the animation
-  const titleTyped = React.useRef(null)
+  const titleTyped = useRef(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const typed = new Typed(titleTyped.current, titleTypedConfig)
 
     return () => {
