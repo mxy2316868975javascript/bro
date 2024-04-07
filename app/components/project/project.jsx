@@ -1,9 +1,11 @@
+'use client'
+
 /**
  * @fileoverview Project component
  */
 
 import './project.css'
-import { itemsInfo } from '../config.jsx'
+import { itemsInfo } from '../../config.jsx'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'

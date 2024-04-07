@@ -8,6 +8,8 @@
 
   --color-footer: #fff0f0;
   --color-link: #fa255e;
+  --color-scrollbar: #b06060;
+  --color-scrollbar-back: #fff0f0;
 
   --color-project-text: #300000;
   --color-project-text-desc: #b06060;
@@ -24,8 +26,6 @@
   --color-waline-text-badge: #df6f6f;
   --color-waline-text-info: #b09090;
   --color-waline-text-infoback: #f6f6f6;
-
-  overflow-x: hidden;
 }
 .dark {
   --color-title: #efefef;
@@ -37,6 +37,8 @@
   
   --color-footer: #000000;
   --color-link: #fa255e;
+  --color-scrollbar: #b06060;
+  --color-scrollbar-back: #101010;
   
   --color-project-text: #fff0f0;
   --color-project-text-desc: #b06060;
@@ -63,3 +65,9 @@ a {
 * {
   transition: all 0.3s ease;
 }
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar) var(--color-scrollbar-back);
+}
+

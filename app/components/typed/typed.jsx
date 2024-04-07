@@ -1,7 +1,9 @@
+'use client'
+
 import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
 import './typed.css'
-import { introTypedConfig, titleTypedConfig } from '../config.jsx'
+import { introTypedConfig, titleTypedConfig } from '../../config.jsx'
 
 function IntroTyped() {
   // Create reference to store the DOM element containing the animation
