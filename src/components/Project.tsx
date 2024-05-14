@@ -1,11 +1,5 @@
-'use client'
-
-/**
- * @fileoverview Project component
- */
-
-import './project.css'
-import { itemsInfo } from '../../config.jsx'
+import '../styles/Project.css'
+import { itemsInfo } from '../config'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -13,9 +7,10 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import { useState, useEffect } from 'react'
 
-export default function Project() {
+export function Project() {
   // 根据屏幕宽度随时更新 swiper 的 slidesPerView
   const [slidesPerView, setSlidesPerView] = useState(3)
+  // 添加初始值和监听事件
   useEffect(() => {
     function updateSlidesPerView() {
       if (window.innerWidth < 1000) {
@@ -35,7 +30,7 @@ export default function Project() {
   // 生成项目列表
   const items = itemsInfo.map((item, index) => {
     return (
-      <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover.src})` }}>
+      <SwiperSlide key={index} style={{ '--background-img': `url(${item.cover.src})` } as React.CSSProperties}>
         <a className='cover-author' href={item.cover.link} target='_blank'>© {item.cover.author}</a>
         <p className='item-container'>
           {item.icon}

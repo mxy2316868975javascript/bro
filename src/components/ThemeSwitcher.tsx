@@ -1,18 +1,14 @@
-'use client'
-
-/**
- * @fileoverview 主题切换组件
- */
-
 import { Switch, ConfigProvider } from 'antd'
 import { SunFilled, MoonFilled } from '@ant-design/icons'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
-function ThemeSwitcher() {
+export function ThemeSwitcher() {
+  // 主题按钮
+  const button = useRef<HTMLButtonElement>(null)
   // 设置主题切换按钮颜色
-  const [themeBtnColor, setThemeBtnColor] = useState('#fff0f0')
+  const [themeBtnColor, setThemeBtnColor] = useState<string>('#fff0f0')
   // 主题切换事件处理函数
-  const handleThemeChange = (checked) => {
+  const handleThemeChange = (checked: boolean) => {
     const htmlClasses = document.documentElement.classList
     if (checked) {
       setThemeBtnColor('#FFD700') // 设置为亮色
@@ -25,7 +21,7 @@ function ThemeSwitcher() {
   // 如果系统是暗色模式，则点一下按钮
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.querySelector('.theme-switch').click()  
+      button.current!.click() 
     }
   }, [])
   // 渲染
@@ -50,10 +46,9 @@ function ThemeSwitcher() {
         checkedChildren={<SunFilled />}
         unCheckedChildren={<MoonFilled />}
         defaultChecked 
-        onChange={handleThemeChange}
+        onChange={handleThemeChange} 
+        ref={button}
       />
     </ConfigProvider>
   )
 }
-
-export default ThemeSwitcher

@@ -1,11 +1,9 @@
-'use client'
-
 import { init } from '@waline/client'
 import '@waline/client/style'
 import { useEffect } from 'react'
-import './waline.css'
+import '../styles/Waline.css'
 
-export default function Waline() {
+export function Waline() {
   useEffect(() => {
     const waline = init({
       el: '#waline',
@@ -19,7 +17,7 @@ export default function Waline() {
       ]
     })
     return () => {
-      waline.destroy()
+      waline!.destroy()
     }
   }, [])
   return <div id="waline"></div>

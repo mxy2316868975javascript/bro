@@ -1,15 +1,13 @@
-'use client'
-
 import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
-import './typed.css'
+import '../styles/Typed.css'
 
-function IntroTyped() {
+export function IntroTyped() {
   // Create reference to store the DOM element containing the animation
   const introTyped = useRef(null)
 
   useEffect(() => {
-    const typed = new Typed(introTyped.current, {
+    const typed = new Typed(introTyped.current, { 
       strings: ['一个心理学专业的大学生<br>一个社会自由主义者<br>喜欢漫画 / 动漫 / BJD<br>喜欢水彩 / 板绘 / 设计<br>喜欢草莓 / 鱿鱼 / 抹茶 / 无骨鸡爪<br>对网络技术 / 编程感兴趣<br>主要使用 JavaScript, 自学 Rust 中<br>喜欢可爱的人事物<br>致力于成为优秀的心理咨询师'],
       typeSpeed: 70,
       backSpeed: 35,
@@ -33,7 +31,7 @@ function IntroTyped() {
   )
 }
 
-function TitleTyped() {
+export function TitleTyped() {
   // Create reference to store the DOM element containing the animation
   const titleTyped = useRef(null)
 
@@ -62,5 +60,3 @@ function TitleTyped() {
     </div>
   )
 }
-
-export { IntroTyped, TitleTyped }
