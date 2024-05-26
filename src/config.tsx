@@ -5,7 +5,7 @@ import cover4 from './images/cover_4.jpg'
 import cover5 from './images/cover_5.jpg'
 // 图标见 https://ant.design/components/icon-cn
 import { 
-  GithubFilled,
+  CalculatorFilled,
   BookFilled,
   SlidersFilled,
   ApiFilled,
@@ -25,8 +25,8 @@ export const sectionsInfo: {
 // 在 Project 组件中展示的项目信息
 export const itemsInfo = [
   { 
-    title: 'GitHub', description: '我的一些小程序~',
-    link: 'https://github.com/LeafYeeXYZ', icon: <GithubFilled />,
+    title: '小鸦抢课', description: '科技的力量',
+    link: 'https://github.com/LeafYeeXYZ/BNUCourseGetter', icon: <CalculatorFilled />,
     cover: { src: cover1, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
   },
   { 
@@ -45,8 +45,8 @@ export const itemsInfo = [
     cover: { src: cover5, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
   },
   {
-    title: '本站源码', description: '开源在 GitHub 了~',
-    link: 'https://github.com/LeafYeeXYZ/MyWebsite', icon: <ApiFilled />,
+    title: 'MarkdownPaper', description: '用 Markdown 写论文!',
+    link: 'https://github.com/LeafYeeXYZ/MarkdownPaper', icon: <ApiFilled />,
     cover: { src: cover4, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
   },
 ]

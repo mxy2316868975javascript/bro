@@ -8,7 +8,7 @@ export function IntroTyped() {
 
   useEffect(() => {
     const typed = new Typed(introTyped.current, { 
-      strings: ['一个心理学专业的大学生<br>一个社会自由主义者<br>喜欢漫画 / 动漫 / BJD<br>喜欢水彩 / 板绘 / 设计<br>喜欢草莓 / 鱿鱼 / 抹茶 / 无骨鸡爪<br>对网络技术 / 编程感兴趣<br>主要使用 JavaScript, 自学 Rust 中<br>喜欢可爱的人事物<br>致力于成为优秀的心理咨询师'],
+      strings: ['一个心理学专业的大学生<br>一个社会自由主义者<br>喜欢漫画 / 动漫 / BJD<br>喜欢水彩 / 板绘 / 设计<br>喜欢草莓 / 鱿鱼 / 抹茶 / 无骨鸡爪<br>对网络技术 / 编程感兴趣<br>主要使用 JS, TS, Go, Rust<br>喜欢一切可爱的人事物<br>致力于成为优秀的心理咨询师'],
       typeSpeed: 70,
       backSpeed: 35,
       smartBackspace: true,

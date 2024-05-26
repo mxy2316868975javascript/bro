@@ -2,7 +2,7 @@ header {
   display: block;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   --header-text: 1.2rem;
   padding-bottom: 1rem; /* for the theme switch */
 
@@ -30,6 +30,27 @@ header {
     top: 1rem;
     left: 1.1rem;
     bottom: 6rem;
+  }
+
+  & .header-github {
+    float: right;
+    position: sticky;
+    top: 0.6rem;
+    right: 1rem;
+    bottom: 6rem;
+    background-color: var(--color-section-title);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    & > span {
+      color: var(--color-text);
+    }
+    &:hover {
+      transform: scale(1.03);
+    }
+    &:active {
+      transform: scale(0.97);
+    }
   }
 }
 
