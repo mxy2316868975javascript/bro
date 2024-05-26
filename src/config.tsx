@@ -1,8 +1,3 @@
-import cover1 from './images/cover_1.jpg'
-import cover2 from './images/cover_2.jpg'
-import cover3 from './images/cover_3.jpg'
-import cover4 from './images/cover_4.jpg'
-import cover5 from './images/cover_5.jpg'
 // 图标见 https://ant.design/components/icon-cn
 import { 
   CalculatorFilled,
@@ -27,26 +22,26 @@ export const itemsInfo = [
   { 
     title: '小鸦抢课', description: '科技的力量',
     link: 'https://github.com/LeafYeeXYZ/BNUCourseGetter', icon: <CalculatorFilled />,
-    cover: { src: cover1, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
+    cover: { src: '/covers/1.png', author: '小叶子', link: '#' }
   },
   { 
     title: '我的博客', description: '里面有我的笔记!',
     link: 'https://blog.leafyee.xyz', icon: <BookFilled />,
-    cover: { src: cover2, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
+    cover: { src: '/covers/2.png', author: '小叶子', link: '#' }
   },
   {
     title: '赛博画师小叶子', description: 'AI 绘画',
     link: 'https://paint.leafyee.xyz', icon: <SlidersFilled />,
-    cover: { src: cover3, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
+    cover: { src: '/covers/3.png', author: '小叶子', link: '#' }
   },
   {
     title: '见习咨询师小叶子', description: 'AI 小叶子陪伴你~',
     link: 'https://chat.leafyee.xyz', icon: <HeartFilled />,
-    cover: { src: cover5, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
+    cover: { src: '/covers/4.png', author: '小叶子', link: '#' }
   },
   {
     title: 'MarkdownPaper', description: '用 Markdown 写论文!',
     link: 'https://github.com/LeafYeeXYZ/MarkdownPaper', icon: <ApiFilled />,
-    cover: { src: cover4, author: 'NOEYEBROWY', link: 'https://x.com/noeyebrow313' } 
+    cover: { src: '/covers/5.png', author: '小叶子', link: '#' }
   },
 ]
