@@ -1,0 +1,5 @@
+@media screen and (max-width: 639px) {
+  .section-container { flex-direction: column!important; }
+  .section-title { height: 3.5rem!important; }
+  .section-content { height: calc(100% - 3.5rem)!important; }
+}

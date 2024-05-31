@@ -50,7 +50,7 @@ export function Project() {
           clickable: true,
         }}
         modules={[Autoplay, FreeMode, Pagination]}
-        className="swiper-container" 
+        className='w-full h-full'
         loop={true} 
         autoplay={{
           delay: 3500,

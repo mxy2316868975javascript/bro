@@ -1,7 +1,6 @@
 import { init } from '@waline/client'
 import '@waline/client/style'
 import { useEffect } from 'react'
-import '../styles/Waline.css'
 
 export function Waline() {
   useEffect(() => {
@@ -20,5 +19,14 @@ export function Waline() {
       waline!.destroy()
     }
   }, [])
-  return <div id="waline"></div>
+  return (
+    <div 
+      id='waline'
+      style={{ scrollbarWidth: 'none' }}
+      className='
+        w-full h-full p-2 overflow-y-auto
+        bg-white dark:bg-zinc-900
+      '
+    ></div>
+  )
 }

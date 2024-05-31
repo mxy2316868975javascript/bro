@@ -42,7 +42,7 @@ export function ThemeSwitcher() {
       }}
     >
       <Switch
-        className='theme-switch' 
+        className='sticky top-4 left-4 bottom-24' 
         checkedChildren={<SunFilled />}
         unCheckedChildren={<MoonFilled />}
         defaultChecked 

@@ -24,7 +24,7 @@ export function App() {
       <Section {...sectionsInfo[2]} overwriteHeight='35rem'>
         <Waline />
       </Section>
-
+        
       <Footer />
     </main>
   )

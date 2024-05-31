@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
-import '../styles/Typed.css'
 
 export function IntroTyped() {
   // Create reference to store the DOM element containing the animation
@@ -25,8 +24,16 @@ export function IntroTyped() {
   }, [])
 
   return (
-    <div id='intro-typed'>
-      <span ref={introTyped}></span>
+    <div 
+      id='intro-typed'
+      className='flex justify-center items-center h-full w-full'
+    >
+      <span 
+        ref={introTyped}
+        className='
+          text-base font-bold text-rose-950 dark:text-rose-50
+        '
+      ></span>
     </div>
   )
 }
@@ -55,8 +62,14 @@ export function TitleTyped() {
   }, [])
 
   return (
-    <div id='title-typed'>
-      <span ref={titleTyped}></span>
+    <div 
+      id='title-typed'
+      className='w-full text-center'
+    >
+      <span 
+        ref={titleTyped}
+        className='font-bold text-white text-xl sm:text-2xl'
+      ></span>
     </div>
   )
 }
