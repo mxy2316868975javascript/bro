@@ -1,5 +1,5 @@
-import { TitleTyped } from './Typed'
-import { ThemeSwitcher } from './ThemeSwitcher'
+import { TitleTyped } from '../widgets/Typed'
+import { ThemeSwitcher } from '../widgets/ThemeSwitcher'
 import { GithubFilled } from '@ant-design/icons'
 
 export function Header() {

@@ -1,10 +1,9 @@
-import '../styles/App.css'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { Section } from './Section'
 import { Project } from './Project'
-import { Waline } from './Waline'
-import { IntroTyped } from './Typed'
+import { Waline } from '../widgets/Waline'
+import { IntroTyped } from '../widgets/Typed'
 import { sectionsInfo } from '../config'
 
 export function App() {

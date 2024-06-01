@@ -3,3 +3,41 @@
   .section-title { height: 3.5rem!important; }
   .section-content { height: calc(100% - 3.5rem)!important; }
 }
+.swiper-pagination-bullet {
+  background-color: theme(colors.rose.500)!important;
+  opacity: 0.3!important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1!important;
+}
+.swiper-pagination {
+  width: 8rem!important;
+  margin: 0 calc(50% - 4rem);
+  margin-bottom: 2.8rem;
+  border-radius: 2rem;
+  padding-bottom: 0.26rem;
+  background-color: theme(colors.rose.50);
+}
+.dark .swiper-pagination {
+  background-color: theme(colors.zinc.950);
+}
+#waline {
+  --waline-white: theme(colors.white);
+  --waline-bg-color: theme(colors.white);
+  --waline-dark-grey: theme(colors.rose.400);
+  --waline-theme-color: theme(colors.rose.500);
+  --waline-active-color: theme(colors.rose.500);
+  --waline-color: theme(colors.rose.950);
+  --waline-badge-color: theme(colors.rose.400);
+  --waline-info-color: theme(colors.rose.300);
+  --waline-info-bg-color: theme(colors.rose.50);
+  & .wl-count { color: theme(colors.rose.950); }
+  & .wl-power { display: none!important; }
+}
+.dark #waline {
+  --waline-white: theme(colors.black);
+  --waline-bg-color: theme(colors.black);
+  --waline-color: theme(colors.rose.50);
+  --waline-info-bg-color: theme(colors.black);
+  & .wl-count { color: theme(colors.rose.50); }
+}
