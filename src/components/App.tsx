@@ -20,10 +20,10 @@ export function App() {
         <IntroTyped />
       </Section>
 
-      <Section {...sectionsInfo[2]} overwriteHeight='35rem'>
+      <Section {...sectionsInfo[2]}>
         <Waline />
       </Section>
-        
+
       <Footer />
     </main>
   )

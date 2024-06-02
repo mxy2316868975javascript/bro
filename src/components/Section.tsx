@@ -4,9 +4,10 @@ interface SectionProps {
   title: string
   subtitle: string
   overwriteHeight?: string
+  widget?: React.ReactElement
 }
 
-export function Section({ children, title, subtitle, overwriteHeight, direction }: SectionProps) {
+export function Section({ children, title, subtitle, overwriteHeight, direction, widget }: SectionProps) {
 
   return (
     <section 
@@ -15,9 +16,8 @@ export function Section({ children, title, subtitle, overwriteHeight, direction 
     >
       <div // 标题和副标题
         className='
-          section-title
-          flex overflow-hidden flex-col justify-center items-center
-          bg-rose-50 dark:bg-zinc-950
+          section-title flex overflow-hidden flex-col justify-center items-center
+          bg-rose-50 dark:bg-zinc-950 relative
           w-full sm:w-2/5
         '
       >
@@ -35,6 +35,13 @@ export function Section({ children, title, subtitle, overwriteHeight, direction 
             font-bold text-base text-rose-950 dark:text-rose-50
           '
         >{subtitle}</p>
+        <p // 小部件
+          className='
+            hidden sm:block absolute w-full h-full
+          '
+        >
+          {widget}
+        </p>
       </div>
       <div // 内容
         className='

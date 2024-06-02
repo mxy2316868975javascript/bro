@@ -68,7 +68,7 @@ export function TitleTyped() {
     >
       <span 
         ref={titleTyped}
-        className='font-bold text-white text-xl sm:text-2xl'
+        className='font-bold text-white text-xl md:text-2xl'
       ></span>
     </div>
   )
