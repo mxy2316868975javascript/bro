@@ -77,6 +77,6 @@ export const itemsInfo = [
   {
     title: 'MarkdownPaper', description: '用 Markdown 写论文!',
     link: 'https://github.com/LeafYeeXYZ/MarkdownPaper', icon: <ApiFilled />,
-    cover: { src: '/covers/5.png', author: '小叶子', link: '#' }
+    cover: { src: '/covers/5.jpg', author: '小叶子', link: '#' }
   },
 ]
