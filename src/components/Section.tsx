@@ -14,6 +14,7 @@ export function Section({ children, title, subtitle, overwriteHeight, direction,
       style={{ flexDirection: direction, height: overwriteHeight || '26rem' }}
       className='flex w-full section-container'
     >
+      
       <div // 标题和副标题
         className='
           section-title flex overflow-hidden flex-col justify-center items-center
@@ -43,6 +44,7 @@ export function Section({ children, title, subtitle, overwriteHeight, direction,
           {widget}
         </p>
       </div>
+
       <div // 内容
         className='
           section-content
@@ -51,6 +53,7 @@ export function Section({ children, title, subtitle, overwriteHeight, direction,
           w-full sm:w-3/5 
         '
       >{children}</div>
+
     </section>
   )
 }

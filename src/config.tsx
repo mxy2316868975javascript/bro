@@ -20,7 +20,7 @@ export const sectionsInfo: {
     direction: 'row',
     widget: (<>
       <img
-        src='/covers/widget-0.PNG'
+        src='/covers/widgets/widget-0.PNG'
         className='absolute w-32 -bottom-8 -left-4 dark:brightness-75
         '
       />
@@ -32,8 +32,20 @@ export const sectionsInfo: {
     direction: 'row-reverse',
     widget: (<>
       <img 
-        src='/covers/widget-1.PNG' 
+        src='/covers/widgets/widget-1.PNG' 
         className='absolute w-40 -bottom-40 -right-8 dark:brightness-75
+        '
+      />
+    </>)
+  },
+  {
+    title: '我的画(๑•̀ㅂ•́)و✧',
+    subtitle: '小叶子的画作展示!',
+    direction: 'row',
+    widget: (<>
+      <img 
+        src='/covers/widgets/widget-2.PNG' 
+        className='absolute w-56 -bottom-32 -left-6 dark:brightness-75
         '
       />
     </>)
@@ -41,12 +53,12 @@ export const sectionsInfo: {
   { 
     title: '留言板(๑￫ܫ￩)', 
     subtitle: '可以匿名留言哦~', 
-    direction: 'row', 
+    direction: 'row-reverse',
     overwriteHeight: '35rem',
     widget: (<>
       <img 
-        src='/covers/widget-2.PNG' 
-        className='absolute w-56 -bottom-32 -left-6 dark:brightness-75
+        src='/covers/widgets/widget-3.PNG' 
+        className='absolute w-40 -bottom-4 -right-6 dark:brightness-75
         '
       />
     </>)
@@ -57,7 +69,7 @@ export const itemsInfo = [
   { 
     title: '小鸦抢课', description: '科技的力量',
     link: 'https://github.com/LeafYeeXYZ/BNUCourseGetter', icon: <CalculatorFilled />,
-    cover: { src: '/covers/1.png', author: '小叶子', link: '#' }
+    cover: { src: '/covers/4.png', author: '小叶子', link: '#' }
   },
   { 
     title: '我的博客', description: '里面有我的笔记!',
@@ -72,11 +84,27 @@ export const itemsInfo = [
   {
     title: '见习咨询师小叶子', description: 'AI 小叶子陪伴你~',
     link: 'https://chat.leafyee.xyz', icon: <HeartFilled />,
-    cover: { src: '/covers/4.png', author: '小叶子', link: '#' }
+    cover: { src: '/covers/1.png', author: '小叶子', link: '#' }
   },
   {
     title: 'MarkdownPaper', description: '用 Markdown 写论文!',
     link: 'https://github.com/LeafYeeXYZ/MarkdownPaper', icon: <ApiFilled />,
     cover: { src: '/covers/5.jpg', author: '小叶子', link: '#' }
   },
+]
+
+export const picsList: string[] = [
+  '/covers/pictures/1.PNG',
+  '/covers/pictures/2.jpg',
+  '/covers/pictures/3.jpg',
+  '/covers/pictures/4.PNG',
+  '/covers/pictures/5.png',
+  '/covers/pictures/6.PNG',
+  '/covers/pictures/7.PNG',
+  '/covers/pictures/8.jpg',
+  '/covers/pictures/9.jpg',
+  '/covers/pictures/10.jpg',
+  '/covers/pictures/11.jpg',
+  '/covers/pictures/12.jpg',
+  '/covers/pictures/13.png',
 ]

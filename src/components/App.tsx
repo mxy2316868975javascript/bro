@@ -4,6 +4,7 @@ import { Section } from './Section'
 import { Project } from './Project'
 import { Waline } from '../widgets/Waline'
 import { IntroTyped } from '../widgets/Typed'
+import { Pictures } from '../widgets/Pictures'
 import { sectionsInfo } from '../config'
 
 export function App() {
@@ -21,6 +22,10 @@ export function App() {
       </Section>
 
       <Section {...sectionsInfo[2]}>
+        <Pictures />
+      </Section>
+
+      <Section {...sectionsInfo[3]}>
         <Waline />
       </Section>
 
