@@ -39,7 +39,7 @@ export const sectionsInfo: {
     </>)
   },
   {
-    title: '我的画(๑•̀ㅂ•́)و✧',
+    title: '我的画(๑•̀ㅂ•́)و',
     subtitle: '小叶子的画作展示!',
     direction: 'row',
     widget: (<>
@@ -111,4 +111,5 @@ export const picsList: string[] = [
   '/covers/pictures/15.PNG',
   '/covers/pictures/16.jpg',
   '/covers/pictures/17.jpg',
+  '/covers/pictures/18.PNG',
 ]

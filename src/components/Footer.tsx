@@ -3,7 +3,7 @@ export function Footer() {
     <footer
       className='
         flex justify-center items-center w-full relative text-center font-bold
-        text-rose-950 dark:text-rose-50 bg-rose-100 dark:bg-black
+        text-rose-950 dark:text-rose-50 bg-yellow-50 dark:bg-black
         h-12 sm:h-14 text-xs sm:text-sm
       '
     >
