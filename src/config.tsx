@@ -112,4 +112,5 @@ export const picsList: string[] = [
   '/covers/pictures/16.jpg',
   '/covers/pictures/17.jpg',
   '/covers/pictures/18.PNG',
+  '/covers/pictures/19.jpeg',
 ]
