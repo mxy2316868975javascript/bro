@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { TinyColor } from "@ctrl/tinycolor";
-import { Button, ConfigProvider, InputNumber, Input, Card } from "antd";
-
+import { Button, ConfigProvider, InputNumber, Input, Card, Watermark, ColorPicker } from "antd";
+import type { ColorPickerProps, GetProp, WatermarkProps } from 'antd';
+type Color = GetProp<ColorPickerProps, 'color'>;
 // import { Header } from './Header'
 // import { Footer } from './Footer'
 // import { Section } from './Section'
@@ -16,6 +17,17 @@ const gridStyle: React.CSSProperties = {
   textAlign: "center",
   margin: '0 auto'
 };
+
+interface WatermarkConfig {
+  content: string;
+  color: string | Color;
+  fontSize: number;
+  zIndex: number;
+  rotate: number;
+  gap: [number, number];
+  offset?: [number, number];
+}
+
 
 const colors1 = ["#6253E1", "#04BEFE"];
 const getHoverColors = (colors: string[]) =>
@@ -75,9 +87,30 @@ export function App() {
     setDetails(detail);
   };
 
+  const [config, setConfig] = useState<WatermarkConfig>({
+    content: 'Ant Design',
+    color: 'rgba(0, 0, 0, 0.15)',
+    fontSize: 16,
+    zIndex: 11,
+    rotate: -22,
+    gap: [100, 100],
+    offset: undefined,
+  });
+  const { content, color, fontSize, zIndex, rotate, gap, offset } = config;
+
+  const watermarkProps: WatermarkProps = {
+    content,
+    zIndex,
+    rotate,
+    gap,
+    offset,
+    font: { color: typeof color === 'string' ? color : color.toRgbString(), fontSize },
+  };
+
   // 渲染
   return (
     <main>
+         <Watermark {...watermarkProps}>
       <div className="App" style={{ height: "100%" }}>
         <h1 className="text-2xl font-bold mb-6 text-center">
           上海市五险一金及税后工资计算器
@@ -156,6 +189,7 @@ export function App() {
           </div>
         )}
       </div>
+      </Watermark>
       {/* <Header />
 
       <Section {...sectionsInfo[0]}>
