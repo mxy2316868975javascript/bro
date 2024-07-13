@@ -42,8 +42,15 @@
   & .wl-count { color: theme(colors.rose.50); }
 } */
 
+@font-face {
+  font-family: "钉钉进步体 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/g0mExeG3fX7Q/j0Vkf3OmIfU2.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/g0mExeG3fX7Q/7h9QyUtsiIUN.woff") format("woff");
+  font-display: swap;
+}
+
 .App {
-  text-align: center;
+  font-family: "钉钉进步体 Regular";
+  /* text-align: center; */
   /* margin-top: 50px; */
 }
 
