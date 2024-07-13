@@ -1,4 +1,4 @@
-@media screen and (max-width: 639px) {
+/* @media screen and (max-width: 639px) {
   .section-container { flex-direction: column!important; }
   .section-title { height: 3.5rem!important; }
   .section-content { height: calc(100% - 3.5rem)!important; }
@@ -40,4 +40,27 @@
   --waline-color: theme(colors.rose.50);
   --waline-info-bg-color: theme(colors.black);
   & .wl-count { color: theme(colors.rose.50); }
+} */
+
+.App {
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+input {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 20px;
+  color: green;
 }
