@@ -28,9 +28,9 @@
     @apply overflow-x-hidden;
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: theme(colors.rose.400) theme(colors.rose.50);
+    /* scrollbar-color: theme(colors.rose.400) theme(colors.rose.50); */
   }
   html.dark {
-    scrollbar-color: theme(colors.rose.400) theme(colors.zinc.950);
+    /* scrollbar-color: theme(colors.rose.400) theme(colors.zinc.950); */
   }
 }
