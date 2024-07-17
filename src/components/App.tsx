@@ -1,13 +1,15 @@
+
+import ResultDisplay from "../modules/SalaryCalculator";
 import Calcular from "../modules/calcular";
-import SalaryCalculator from "../modules/calcular2";
+
 
 const App = () => {
 
   // 渲染
   return (
     <main>
-      <SalaryCalculator/>
-    <Calcular />
+      <ResultDisplay />
+    {/* <Calcular /> */}
       {/* <Header />
 
       <Section {...sectionsInfo[0]}>

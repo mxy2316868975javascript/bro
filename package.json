@@ -2,7 +2,12 @@
   "name": "website-of-leaf",
   "private": true,
   "description": "计算器",
-  "keywords": ["工资计算器", "税后", "计算器", "一线城市"],
+  "keywords": [
+    "工资计算器",
+    "税后",
+    "计算器",
+    "一线城市"
+  ],
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,8 +18,9 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
+    "@ctrl/tinycolor": "^4.1.0",
     "@waline/client": "^3.2.2",
-    "antd": "^5.18.3",
+    "antd": "^5.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "swiper": "^11.1.4",
